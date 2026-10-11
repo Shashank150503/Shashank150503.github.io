@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shashank Kumar Singh | Java & Full Stack Developer</title>
+<style>
+:root{--bg:#f4f5fb;--fg:#12141f;--mut:#555b73;--card:rgba(255,255,255,.7);--bd:rgba(20,20,60,.12);--ac:#5b5bf0;--ac2:#0aa6c9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07080f;--fg:#eef0ff;--mut:#9aa0bd;--card:rgba(20,22,40,.6);--bd:rgba(160,170,255,.16);--ac:#8b8bff;--ac2:#3fe0ff}}
+:root[data-theme="dark"]{--bg:#07080f;--fg:#eef0ff;--mut:#9aa0bd;--card:rgba(20,22,40,.6);--bd:rgba(160,170,255,.16);--ac:#8b8bff;--ac2:#3fe0ff}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 14px;backdrop-filter:blur(10px)}
+nav b{letter-spacing:.5px}nav div a{color:var(--mut);text-decoration:none;margin-left:20px;font-size:14px}nav div a:hover{color:var(--ac)}
+main{position:relative;z-index:2}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:100px 6vw;max-width:1100px;margin:auto}
+h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.05;margin:.2em 0}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);margin:0 0 24px}
+p{color:var(--mut);max-width:640px}.tag{color:var(--ac2);font-weight:600;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:linear-gradient(90deg,var(--ac),var(--ac2));color:#fff;text-decoration:none;font-weight:600;margin:10px 12px 0 0}
+.btn.o{background:none;border:1px solid var(--bd);color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:22px;backdrop-filter:blur(12px);transform:perspective(800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .15s,border-color .2s;text-decoration:none;color:inherit;display:block}
+.card:hover{border-color:var(--ac)}.card h3{margin:0 0 8px}.card p{margin:0 0 12px;font-size:14px}
+.chips span{display:inline-block;font-size:12px;padding:3px 10px;border-radius:99px;border:1px solid var(--bd);margin:0 6px 6px 0;color:var(--ac2)}
+.skills .card{text-align:center;font-weight:600}
+.rv{opacity:0;transform:translateY(30px);transition:all .8s}.rv.in{opacity:1;transform:none}
+footer{position:relative;z-index:2;text-align:center;padding:30px;color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<nav><b>SKS.</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<main>
+<section id="home">
+  <div class="tag">Hello, I'm</div>
+  <h1><span>Shashank Kumar Singh</span></h1>
+  <p style="font-size:1.15rem">Java & Full Stack Developer building secure Spring Boot backends, scalable job portals and AI-powered tools.</p>
+  <div><a class="btn" href="#projects">View my work</a><a class="btn o" href="#contact">Get in touch</a></div>
+</section>
+<section id="about" class="rv">
+  <div class="tag">About</div><h2>Turning complex problems into simple products</h2>
+  <p>I'm a Computer Science graduate (Chandigarh University, 2025) based in Chandigarh, India. I build secure, high-performance backends with Java and Spring Boot, plus full-stack apps with React, Node and MongoDB. I'm also exploring AI agents that turn plain-English questions into real results.</p>
+</section>
+<section id="skills" class="rv">
+  <div class="tag">Skills</div><h2>Tech I work with</h2>
+  <div class="grid skills">
+    <div class="card">Java</div><div class="card">Spring Boot</div><div class="card">Spring Security</div><div class="card">Hibernate & JPA</div>
+    <div class="card">REST APIs & JWT</div><div class="card">MySQL & PostgreSQL</div><div class="card">MongoDB</div><div class="card">Node & Express</div><div class="card">React</div><div class="card">Python & C++</div>
+  </div>
+</section>
+<section id="experience" class="rv">
+  <div class="tag">Experience</div><h2>Where I've worked</h2>
+  <div class="grid">
+    <div class="card"><h3>Java Developer</h3><p><b>Geeks for Geeks</b> · Noida · Jul 2025 – Oct 2025</p><p>Built a Travel-Tourism booking platform (Java Swing, Spring Boot, MySQL) handling 1,200+ bookings a month and cutting booking time by 45%. Added JWT auth and role-based access with Spring Security for 3 user roles, built REST APIs serving 500+ concurrent users at 99.5% reliability, and improved query performance by 35% with 3NF schema design.</p><div class="chips"><span>Spring Boot</span><span>Spring Security</span><span>MySQL</span><span>Postman</span></div></div>
+    <div class="card"><h3>Spring Developer Intern</h3><p><b>Movie Review Platform</b> · Chandigarh · May 2025 – Jul 2025</p><p>Built a movie review platform for 2,000+ users with sub-200ms response times. Used a Controller-Service-Repository architecture, Spring Data JPA indexed searches (40% faster retrieval over 5,000+ records) and Bean Validation that blocked 300+ invalid submissions a month.</p><div class="chips"><span>Spring Boot</span><span>JPA</span><span>REST</span><span>MVC</span></div></div>
+  </div>
+</section>
+<section id="projects" class="rv">
+  <div class="tag">Projects</div><h2>Selected work</h2>
+  <div class="grid">
+    <a class="card" href="https://github.com/Shashank150503/Hamar-Job-Portal" target="_blank" rel="noopener"><h3>Hamar Job Portal</h3><p>Full-stack job portal with JWT auth, role-based access for job seekers and recruiters, job posting and application tracking.</p><div class="chips"><span>React</span><span>Node</span><span>MongoDB</span></div></a>
+    <a class="card" href="https://github.com/Shashank150503/Shopify-Ai-APP" target="_blank" rel="noopener"><h3>Shopify AI Agent</h3><p>Ask questions about your store in plain English. An agent pipeline plans, generates ShopifyQL, validates, runs and explains the results.</p><div class="chips"><span>Python</span><span>LLM</span><span>ShopifyQL</span></div></a>
+    <a class="card" href="https://github.com/Shashank150503/REAL-DATA-STOCK-PIPELINE" target="_blank" rel="noopener"><h3>Real-Time Stock Pipeline</h3><p>Streaming stock data pipeline with a live dashboard and a scalable architecture.</p><div class="chips"><span>Kafka</span><span>Python</span><span>Streamlit</span></div></a>
+    <div class="card"><h3>Concurrent Inventory System</h3><p>Thread-safe inventory using synchronized blocks and ReentrantLock, handling 100+ concurrent transactions with time-bound reservations and 100% inventory accuracy.</p><div class="chips"><span>Java</span><span>Multithreading</span><span>ReentrantLock</span></div></div>
+    <div class="card"><h3>ATM Banking Simulator</h3><p>Secure ATM app with PIN authentication, encrypted passwords and transaction logging with ACID compliance, backed by an indexed MySQL schema.</p><div class="chips"><span>Java Swing</span><span>MySQL</span><span>JDBC</span><span>Cryptography</span></div></div>
+  </div>
+</section>
+<section id="education" class="rv">
+  <div class="tag">Education</div><h2>Where I studied</h2>
+  <div class="grid"><div class="card"><h3>B.E. in Computer Science</h3><p>Chandigarh University, Punjab · Sep 2021 – May 2025</p></div></div>
+</section>
+<section id="contact" class="rv">
+  <div class="tag">Contact</div><h2>Let's work together</h2>
+  <p>Open to full-time roles and freelance projects in full-stack development and AI applications.</p>
+  <div><a class="btn" href="mailto:shanshank1505kumar@gmail.com">Email me</a><a class="btn o" href="https://www.linkedin.com/in/shashank-singh-9ab383231/" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/Shashank150503" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+</main>
+<footer>© 2026 Shashank Kumar Singh</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('in')})},{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+  document.querySelectorAll('.card').forEach(function(c){
+    c.addEventListener('mousemove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--ry',((e.clientX-r.left)/r.width-.5)*10+'deg');c.style.setProperty('--rx',-((e.clientY-r.top)/r.height-.5)*10+'deg')});
+    c.addEventListener('mouseleave',function(){c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg')});
+  });
+  if(!window.THREE)return;
+  try{
+    var cv=document.getElementById('bg'),cs=getComputedStyle(document.documentElement);
+    var ac=cs.getPropertyValue('--ac').trim()||'#8b8bff',ac2=cs.getPropertyValue('--ac2').trim()||'#3fe0ff';
+    var r=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});
+    r.setPixelRatio(Math.min(devicePixelRatio,2));
+    var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(60,1,.1,100);cam.position.z=7;
+    var g=new THREE.Group();s.add(g);
+    var core=new THREE.Mesh(new THREE.IcosahedronGeometry(1.6,1),new THREE.MeshBasicMaterial({color:ac,wireframe:true,transparent:true,opacity:.7}));
+    var inner=new THREE.Mesh(new THREE.OctahedronGeometry(.8,0),new THREE.MeshBasicMaterial({color:ac2,wireframe:true}));
+    var ring=new THREE.Mesh(new THREE.TorusGeometry(2.6,.015,8,120),new THREE.MeshBasicMaterial({color:ac2}));
+    ring.rotation.x=1.2;g.add(core,inner,ring);
+    var n=900,pos=new Float32Array(n*3);
+    for(var i=0;i<n*3;i++)pos[i]=(Math.random()-.5)*28;
+    var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pos,3));
+    var pts=new THREE.Points(pg,new THREE.PointsMaterial({color:ac,size:.045,transparent:true,opacity:.8}));s.add(pts);
+    function size(){var w=innerWidth,h=innerHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix();g.position.x=w>800?2.6:0;}
+    size();addEventListener('resize',size);
+    var mx=0,my=0,sc=0,reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+    addEventListener('scroll',function(){sc=scrollY/Math.max(1,document.body.scrollHeight-innerHeight)});
+    var t=0;
+    (function loop(){
+      requestAnimationFrame(loop);t+=reduce?.0005:.005;
+      core.rotation.y=t+sc*6;core.rotation.x=t*.6;inner.rotation.y=-t*1.5;inner.rotation.z=t;
+      ring.rotation.z=t*.8;pts.rotation.y=t*.15+sc*1.5;
+      g.position.y=-sc*3+Math.sin(t*2)*.15;g.scale.setScalar(1+sc*.4);
+      cam.position.x+=(mx*1.5-cam.position.x)*.05;cam.position.y+=(-my*1.5-cam.position.y)*.05;cam.lookAt(0,0,0);
+      r.render(s,cam);
+    })();
+  }catch(e){console.warn('3D unavailable',e)}
+})();
+</script>
+</body>
+</html>
